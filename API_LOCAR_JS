@@ -1,0 +1,66 @@
+1 - Crie um arquivo html contendo a referencia ao arquivo JSON 
+Exemplo: 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Local Fake</title>
+</head>
+<body>
+  <h1>API Local Fake</h1>
+  <button id="verUsuarios">Ver Usuários</button>
+
+  <script src="api.js"></script>
+</body>
+</html>
+
+2- No arquivo API.JS adicione os dados que são chamados de JSON
+let usuarios = [
+  { id: 1, nome: "Gabriela", idade: 25 },
+  { id: 2, nome: "Maria", idade: 30 }
+];
+
+
+3 - Chamadas de requisições:
+// GET
+function getUsuarios() {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(usuarios), 300);
+  });
+}
+
+// POST
+function addUsuario(dados) {
+  return new Promise(resolve => {
+    const novoUsuario = { id: usuarios.length + 1, ...dados };
+    usuarios.push(novoUsuario);
+    setTimeout(() => resolve(novoUsuario), 300);
+  });
+}
+
+// PUT
+function updateUsuario(id, dados) {
+  return new Promise(resolve => {
+    const usuario = usuarios.find(u => u.id === id);
+    if (usuario) {
+      Object.assign(usuario, dados);
+      setTimeout(() => resolve(usuario), 300);
+    } else {
+      setTimeout(() => resolve(null), 300);
+    }
+  });
+}
+
+// DELETE
+function deleteUsuario(id) {
+  return new Promise(resolve => {
+    usuarios = usuarios.filter(u => u.id !== id);
+    setTimeout(() => resolve({ mensagem: "Usuário removido" }), 300);
+  });
+}
+
+4- Usar a API - No mesmo arquivo API JS 
+document.getElementById("verUsuarios").addEventListener("click", async () => {
+  const dados = await getUsuarios();
+  console.log("Usuários:", dados);
+});
+
