@@ -1,0 +1,30 @@
+CSS Exportado: <link rel="stylesheet" href="style.css">
+
+# 1 - Modificar os textos:
+color → define a cor do texto.
+background-color → cor de fundo.
+font-size → tamanho da fonte.
+font-family → tipo da fonte.
+text-align → alinhamento (left, center, right).
+
+# 2. Espaçamento (Box Model)
+
+margin → espaço externo.
+padding → espaço interno.
+border → borda da caixa.
+width / height → largura e altura.
+
+# 3. Posicionamento e Layout
+
+display → define como o elemento se comporta (block, inline, flex, grid).
+position → posicionamento (static, relative, absolute, fixed, sticky).
+top, left, right, bottom → deslocamento.
+z-index → ordem na pilha de elementos.
+
+# 4. Flexbox (mais usado hoje)
+
+display: flex
+justify-content → alinhamento horizontal.
+align-items → alinhamento vertical.
+flex-direction → direção (row, column).
+gap → espaçamento entre itens.
