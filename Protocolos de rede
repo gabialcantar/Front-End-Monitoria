@@ -1,1 +1,24 @@
+Os protocolos de rede nada mais são que idiomas que os navegadores utilizam para "conversar" com os servidores na internet 
 
+Um exemplo, gostaria de acessar o site do ClimaTempo, eu sou o usuário (cliente) que faço uma requisição ao servidor (request) e o servidor responde uma pergunta (response). Essa resposta é traduzida em HTML, CSS e JS quando exige uma visualização dedidcada.
+
+# Metodos HTTP #
+
+GET - Pedir uma informação que no exemplo acessar o site do climatempo 
+
+POST - Enviar uma informação - Se no climatempo eu tiver uma conta irei realizar o login em um formulário 
+
+PUT - Atualizção da infrormação existente como a troca de uma senha
+
+DELETE - Apagar uma informação
+
+Erros de requisição mais comuns: 
+
+Status Codes importantes
+
+200 OK → tudo certo.
+201 Created → algo foi criado com sucesso.
+400 Bad Request → erro no pedido.
+401 Unauthorized → precisa de login.
+404 Not Found → não encontrado.
+500 Internal Server Error → erro no servidor.
