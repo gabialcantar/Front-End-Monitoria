@@ -1,0 +1,110 @@
+# 🌐 Guia de HTML Básico
+
+Este repositório foi criado para reunir explicações e exemplos práticos de HTML.  
+
+# Estrutura básica:
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minha primeira página</title>
+  </head>
+  <body>
+    <h1>Olá, mundo!</h1>
+    <p>Esse é meu primeiro site em HTML.</p>
+  </body>
+</html>
+
+# Tags principais: 
+<h1> a <h6> (títulos)
+<p> (parágrafo)
+<a> (link)
+<img> (imagem)
+
+# Listas Ordenadas e Não ordenadas:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Listas</title>
+</head>
+<body>
+  <h2>Lista não ordenada (ul)</h2>
+  <ul>
+    <li>Maçã</li>
+    <li>Banana</li>
+    <li>Laranja</li>
+  </ul>
+
+  <h2>Lista ordenada (ol)</h2>
+  <ol>
+    <li>Primeiro passo</li>
+    <li>Segundo passo</li>
+    <li>Terceiro passo</li>
+  </ol>
+
+  <h2>Lista de definição (dl)</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação usada para estruturar páginas web.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de estilo usada para deixar a página bonita.</dd>
+  </dl>
+</body>
+</html>
+
+#Formulário
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Formulário</title>
+</head>
+<body>
+  <h2>Formulário de Contato</h2>
+  <form action="#" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea><br><br>
+
+    <label for="opcao">Como conheceu o site?</label>
+    <select id="opcao" name="opcao">
+      <option value="google">Google</option>
+      <option value="amigos">Amigos</option>
+      <option value="redes">Redes Sociais</option>
+    </select><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
+
+#Inserção de mídia: 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Mídia</title>
+</head>
+<body>
+  <h2>Imagem</h2>
+  <img src="https://via.placeholder.com/150" alt="Exemplo de imagem">
+
+  <h2>Áudio</h2>
+  <audio controls>
+    <source src="musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <h2>Vídeo</h2>
+  <video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
+</body>
+</html>
+
+
+
